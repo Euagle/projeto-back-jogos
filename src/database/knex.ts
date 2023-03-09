@@ -3,7 +3,7 @@ import { knex } from "knex"
 export const db = knex({
     client: "sqlite3",
     connection: {
-        filename: "./src/database/lojaGamer.db", //localização do seu arquivo .db
+        filename: "./lojaGamer.db", //localização do seu arquivo .db
     },
     useNullAsDefault: true, // definirá NULL quando encontrar valores undefined
     pool: {
